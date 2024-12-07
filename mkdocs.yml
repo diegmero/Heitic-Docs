@@ -1,0 +1,133 @@
+site_name: Heitic Docs
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: es
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+nav:
+  - Inicio: index.md
+  - Desarrollo:
+    - Lenguajes:
+      - Python:
+        - Introducción: lenguajes/python/introduccion.md
+        - Conceptos Básicos: lenguajes/python/conceptos-basicos.md
+        - Programación Avanzada: lenguajes/python/programacion-avanzada.md
+        - Bibliotecas y Frameworks: lenguajes/python/bibliotecas-frameworks.md
+        - Mejores Prácticas: lenguajes/python/mejores-practicas.md
+      - JavaScript:
+        - Fundamentos: lenguajes/javascript/fundamentos.md
+        - ES6+: lenguajes/javascript/es6-plus.md
+        - Node.js: lenguajes/javascript/nodejs.md
+        - Frameworks Frontend: lenguajes/javascript/frameworks-frontend.md
+      - Go:
+        - Sintaxis Básica: lenguajes/go/sintaxis-basica.md
+        - Concurrencia: lenguajes/go/concurrencia.md
+        - Manejo de Errores: lenguajes/go/manejo-errores.md
+      - Kotlin:
+        - Fundamentos: lenguajes/kotlin/fundamentos.md
+        - Programación Android: lenguajes/kotlin/android.md
+        - Coroutines: lenguajes/kotlin/coroutines.md
+    - Bases de Datos:
+      - SQL:
+        - MySQL: bases-datos/sql/mysql.md
+        - PostgreSQL: bases-datos/sql/postgresql.md
+      - NoSQL:
+        - MongoDB: bases-datos/nosql/mongodb.md
+        - Redis: bases-datos/nosql/redis.md
+  - Operaciones:
+    - DevOps:
+      - Conceptos Básicos: devops/conceptos-basicos.md
+      - CI/CD:
+        - Jenkins: devops/cicd/jenkins.md
+        - GitLab CI: devops/cicd/gitlab-ci.md
+        - GitHub Actions: devops/cicd/github-actions.md
+      - Contenedores:
+        - Docker: devops/contenedores/docker.md
+        - Kubernetes: devops/contenedores/kubernetes.md
+      - Infraestructura como Código:
+        - Terraform: devops/iac/terraform.md
+        - Ansible: devops/iac/ansible.md
+    - SRE:
+      - Principios SRE: sre/principios.md
+      - Monitoreo y Alertas: sre/monitoreo-alertas.md
+      - Gestión de Incidentes: sre/gestion-incidentes.md
+      - Automatización: sre/automatizacion.md
+    - Cloud Computing:
+      - AWS: cloud/aws.md
+      - Google Cloud: cloud/gcp.md
+      - Azure: cloud/azure.md
+  - Seguridad y Mejores Prácticas:
+    - Seguridad:
+      - Principios Básicos: seguridad/principios-basicos.md
+      - OWASP Top 10: seguridad/owasp-top-10.md
+      - Seguridad en la Nube: seguridad/seguridad-nube.md
+    - Metodologías:
+      - Agile: metodologias/agile.md
+      - Scrum: metodologias/scrum.md
+      - Clean Code: metodologias/clean-code.md
+      - Patrones de Diseño: metodologias/patrones-diseno.md
+  - Recursos y Herramientas:
+    - Herramientas:
+      - Control de Versiones: herramientas/git.md
+      - Editores y IDEs: herramientas/editores-ides.md
+      - Herramientas de Productividad: herramientas/productividad.md
+    - Recursos:
+      - Libros Recomendados: recursos/libros.md
+      - Cursos Online: recursos/cursos-online.md
+      - Comunidades y Foros: recursos/comunidades-foros.md
+  - Acerca de: about.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+
+# ... (el resto de tu configuración permanece igual)
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tuusuario
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/tuusuario
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/tuusuario
+
+copyright: |
+  &copy; 2025 <a href="https://github.com/tuusuario" target="_blank" rel="noopener">Diego Romero</a>
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+  - css/extra.css
