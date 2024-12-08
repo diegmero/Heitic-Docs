@@ -1,0 +1,28 @@
+.md-footer {
+  background-color: #2192e2;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.md-footer-copyright{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.md-footer-meta {
+  background-color: #021929;
+}
+
+.md-footer-copyright__highlight {
+  color: #ffffff;
+}
+
+.md-social__link {
+  color: #ffffff;
+}
