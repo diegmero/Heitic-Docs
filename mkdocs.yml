@@ -43,6 +43,8 @@ nav:
         - Node.js: lenguajes/javascript/nodejs.md
         - Frameworks Frontend: lenguajes/javascript/frameworks-frontend.md
       - Go:
+        - Instalacion: lenguajes/go/instalacion.md
+        - Frameworks: lenguajes/go/frameworks.md
         - Sintaxis Básica: lenguajes/go/sintaxis-basica.md
         - Concurrencia: lenguajes/go/concurrencia.md
         - Manejo de Errores: lenguajes/go/manejo-errores.md
@@ -65,7 +67,9 @@ nav:
         - GitLab CI: devops/cicd/gitlab-ci.md
         - GitHub Actions: devops/cicd/github-actions.md
       - Contenedores:
-        - Docker: devops/contenedores/docker.md
+        - Docker: 
+          - Instalacion: devops/contenedores/docker-install.md
+          - Configuración: devops/contenedores/docker.md
         - Kubernetes: devops/contenedores/kubernetes.md
       - Infraestructura como Código:
         - Terraform: devops/iac/terraform.md
